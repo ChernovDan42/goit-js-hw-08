@@ -51,12 +51,9 @@ function populateForm() {
    
    
     if (parsedData) {
-        email.value = parsedData.email;
-        message.value = parsedData.message;
-    } else {
-        email.value = '';
-        message.value = '';
-    }
+        email.value = parsedData.email || '';
+        message.value = parsedData.message || '';
+    } 
   
 }
 
